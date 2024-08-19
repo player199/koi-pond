@@ -1,0 +1,42 @@
+{
+  "productName": "koi-pond",
+  "version": "0.0.1",
+  "identifier": "koi.pond",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "macOSPrivateApi": true,
+    "windows": [
+      {
+        "center": true,
+        "alwaysOnTop": true,
+        "hiddenTitle": true,
+        "resizable": false,
+        "decorations": false,
+        "transparent": true,
+        "fullscreen": false,
+        "visibleOnAllWorkspaces": true,
+        "maximized": true,
+        "title": "koi-pond"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
