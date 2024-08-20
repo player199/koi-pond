@@ -12,16 +12,16 @@
     "macOSPrivateApi": true,
     "windows": [
       {
-        "center": true,
+        "title": "koi-pond",
         "alwaysOnTop": true,
+        "center": true,
         "hiddenTitle": true,
         "resizable": false,
         "decorations": false,
         "transparent": true,
         "fullscreen": false,
         "visibleOnAllWorkspaces": true,
-        "maximized": true,
-        "title": "koi-pond"
+        "maximized": true
       }
     ],
     "security": {
