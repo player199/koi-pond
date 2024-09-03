@@ -1,7 +1,7 @@
-import { createSignal } from "solid-js";
-import koi from "./assets/koi.png";
-import { listen } from "@tauri-apps/api/event";
 import "./App.css";
+import koi from "./assets/koi.png";
+import { createSignal } from "solid-js";
+import { listen } from "@tauri-apps/api/event";
 
 function App() {
   let koiRef: HTMLDivElement;
