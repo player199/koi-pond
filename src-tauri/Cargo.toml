@@ -12,13 +12,13 @@ name = "koi_pond_lib"
 crate-type = ["lib", "cdylib", "staticlib"]
 
 [build-dependencies]
-tauri-build = { version = "2.0.0-beta", features = [] }
+tauri-build = { version = "2.0.0-rc", features = [] }
 
 [dependencies]
-tauri = { version = "2.0.0-beta", features = ["macos-private-api"] }
-tauri-plugin-shell = "2.0.0-beta"
+tauri = { version = "2.0.0-rc", features = ["macos-private-api"] }
+tauri-plugin-shell = "2.0.0-rc"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-mouse_position = "0.1.4"
 mouce = "0.2.44"
+mouse_position = "0.1.4"
 

@@ -1,4 +1,4 @@
-use tauri::{Manager, AppHandle};
+use tauri::{Manager, AppHandle, Emitter};
 use mouse_position::mouse_position::Mouse;
 use mouce::Mouse as OtherMouse;
 use mouce::common::{MouseEvent, MouseButton};
@@ -14,7 +14,7 @@ fn listen_for_mouse_events(app_handle: AppHandle) {
 
   mouse_manager.hook(Box::new(move |e| {
     match e{
-      MouseEvent::Press(MouseButton::Left) => {                  
+      MouseEvent::Press(MouseButton::Left) => {
         let position = Mouse::get_mouse_position();
         match position {
             Mouse::Position { x, y } => {
