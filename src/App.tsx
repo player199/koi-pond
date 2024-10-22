@@ -81,7 +81,7 @@ function App() {
 
   return (
     <div class="container">
-      <div style={calculateStyle(position(), direction())} ref={koiRef}>
+      <div style={calculateStyle(position())} ref={koiRef}>
         <img class="koi" width={175} src={images[`./assets/koi-frames/koi-${direction().toString().padStart(3, '0')}-${frame().toString().padStart(2, '0')}.png`].default} />
       </div>
     </div>
