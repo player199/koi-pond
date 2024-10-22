@@ -29,19 +29,6 @@ body:before {
   margin: 0;
 }
 
-@keyframes koi {
-  0%,
-  100% {
-    scale: 1;
-  }
-  50% {
-    scale: 1.15;
-    transform: skew(0.32rad);
-  }
-}
-
 .koi {
-  animation-name: koi;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+  transform: rotate(-90deg);
 }
