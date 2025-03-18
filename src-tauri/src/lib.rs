@@ -1,5 +1,6 @@
 use mouce::common::{MouseButton, MouseEvent};
 use mouce::Mouse as OtherMouse;
+use mouce::MouseActions;
 use mouse_position::mouse_position::Mouse;
 use tauri::{AppHandle, Emitter, Manager};
 
